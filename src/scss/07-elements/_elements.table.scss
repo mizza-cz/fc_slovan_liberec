@@ -1,0 +1,51 @@
+.table > :not(:first-child) {
+  border: none;
+}
+.table-responsive {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+
+    th,
+    td {
+      padding-left: 24px;
+      padding-right: 24px;
+      text-align: left;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      white-space: nowrap;
+    }
+    td {
+      border-bottom: 2px solid #d8d8d8;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+
+      a {
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+    }
+    tr:nth-child(even) td {
+      background-color: #f5f5f5 !important;
+    }
+
+    tr:last-child td {
+      border-bottom: 2px solid var(--color-blue);
+    }
+    th {
+      color: var(--color-light);
+      background-color: var(--color-blue);
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

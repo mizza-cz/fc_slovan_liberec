@@ -1,0 +1,81 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/topstory/topstory.twig" %} {% include
+"@components/scoreboard/scoreboard.twig" %}
+<div class="pubs">
+  <div class="container-fluid">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/hp-posts/hp-posts.twig" %} {% include
+"@components/fanshop/fanshop.twig" %}
+
+<div class="hp-border-section">
+  <section class="hp-social">
+    <div class="container">
+      <div class="row g-10 mb-3">
+        <div class="col-lg-8">
+          {% include "@components/socialStream/socialStream.twig" %}
+        </div>
+        <div class="col-lg-4">
+          {% include "@components/socialNews/socialNews.twig" %}
+        </div>
+      </div>
+      <a href="#" class="link ml-auto">Další zprávy</a>
+    </div>
+  </section>
+
+  <div class="pubs">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <a href="#" target="_blank">
+            <img
+              src="https://via.placeholder.com/632x150"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#" target="_blank">
+            <img
+              src="https://via.placeholder.com/632x150"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

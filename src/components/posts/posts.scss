@@ -1,0 +1,30 @@
+.posts {
+  background-color: var(--color-blue);
+  padding: 40px 0;
+  padding-bottom: 80px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  position: relative;
+  z-index: 999999;
+  @include media-breakpoint-down(xl) {
+    border-radius: 0;
+    padding-bottom: 40px;
+  }
+  .hp-posts__title,
+  .h4 {
+    color: var(--color-light);
+  }
+}
+.hp-border-section {
+  padding-bottom: 40px;
+  border-bottom-left-radius: 50% 4%;
+  border-bottom-right-radius: 50% 4%;
+  position: relative;
+  background: var(--color-gray);
+  z-index: 999999;
+ 
+  @include media-breakpoint-down(xl) {
+    border-radius: 0;
+    padding-bottom: 40px;
+  }
+}

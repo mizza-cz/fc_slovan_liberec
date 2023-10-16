@@ -1,0 +1,84 @@
+.fanshop {
+  margin-bottom: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 24px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.046793);
+    background-color: var(--color-light);
+    margin-bottom: 16px;
+  }
+  &__col {
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media-breakpoint-only(lg) {
+      max-width: 50%;
+      flex: 0 0 50%;
+      border-bottom: 2px solid #f5f5f5;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 50%;
+      flex: 0 0 50%;
+      border-bottom: 2px solid #f5f5f5;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex: 100%;
+      border-bottom: 2px solid #f5f5f5;
+    }
+  }
+  &__item {
+    text-decoration: transparent;
+
+    &:hover {
+      .fanshop__title {
+        text-decoration-color: var(--color-blue);
+      }
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      height: 200px;
+      object-fit: contain;
+      text-align: center;
+      margin: 0 auto 16px;
+      transition: all 0.3s;
+    }
+  }
+  &__col + &__col {
+    border-left: 2px solid #f5f5f5;
+  }
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+    margin-left: -12px;
+    margin-right: -12px;
+    justify-content: space-between;
+  }
+  &__title {
+    color: var(--color-blue);
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0 12px;
+    text-decoration: underline;
+    transition: all 0.3s;
+    text-decoration-color: transparent;
+    max-width: 160px;
+    letter-spacing: 0.2px;
+  }
+  &__price {
+    font-size: 20px;
+    color: var(--color-blue-2);
+    text-align: right;
+    line-height: 25px;
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+}

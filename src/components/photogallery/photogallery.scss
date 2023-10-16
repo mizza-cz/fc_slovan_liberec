@@ -1,0 +1,41 @@
+.photogallery {
+  &__item {
+    display: block;
+    width: 100%;
+    aspect-ratio: 232/130;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__number {
+    position: absolute;
+    background: rgba(#0b2a84, 0.8);
+    color: var(--color-light);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    span {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

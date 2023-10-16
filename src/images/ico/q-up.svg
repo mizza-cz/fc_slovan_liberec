@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>quotation-up@1x</title>
+    <g id="1.-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Článek" transform="translate(-1124, -1844)" fill="#121619" fill-rule="nonzero">
+            <g id="citace" transform="translate(532, 1844)">
+                <g id="quotation-up" transform="translate(592, 0)">
+                    <path d="M16.437,0 C5.517,1.313 0,7.164 0,17.672 L0,32 L17.011,32 L17.011,15.761 L10.575,15.761 C10.575,10.985 12.184,8.597 16.437,7.522 L16.437,0 L16.437,0 Z M39.425,0 C28.505,1.313 22.99,7.164 22.99,17.672 L22.99,32 L40,32 L40,15.761 L33.563,15.761 C33.563,10.985 35.173,8.597 39.425,7.522 L39.425,0 L39.425,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
