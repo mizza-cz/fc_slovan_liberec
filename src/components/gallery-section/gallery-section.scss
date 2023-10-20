@@ -1,0 +1,63 @@
+.gallery-section {
+  &__content {
+    @include media-breakpoint-down(md) {
+      --bs-gutter-y: 1.5rem !important;
+      --bs-gutter-x: 1.5rem !important;
+    }
+  }
+  &__item {
+    a {
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 408/230;
+    position: relative;
+    overflow: hidden;
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-blue);
+
+      color: var(--color-blue-2);
+      font-size: 18px;
+      font-weight: 700;
+      min-width: 100px;
+      padding: 8px 24px;
+      text-align: right;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 24px;
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-image: url("../images/ico/gallery-count.svg");
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__info {
+    padding: 16px 24px 0 24px;
+    .tags__date {
+      margin-bottom: 8px;
+    }
+    .h4 {
+      color: var(--color-blue);
+    }
+  }
+}

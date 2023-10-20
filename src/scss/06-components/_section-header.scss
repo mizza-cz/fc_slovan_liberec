@@ -1,0 +1,131 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  &__form {
+    padding: 0 32px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 45px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.046793);
+    opacity: 1;
+    background: var(--color-light);
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+      width: 100%;
+    }
+    button {
+      display: block;
+      border: none;
+      outline: none;
+      position: absolute;
+      right: 16px;
+      background: transparent;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: var(--color-light);
+      padding: 8px 54px 8px 32px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      outline-color: var(--color-blue);
+      width: 320px;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+      &::placeholder {
+        opacity: 0.300851;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    margin-left: -32px;
+    margin-right: -32px;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+  &__select {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+  }
+  &__select-name {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 24px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -26px;
+    margin-right: -26px;
+    margin-bottom: 24px;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 8px;
+    }
+    a {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      color: var(--color-blue-2);
+    }
+    li {
+      padding: 0 26px;
+      position: relative;
+      margin-bottom: 16px;
+    }
+    li + li {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 3px;
+        height: 7px;
+        background-color: var(--color-blue-2);
+        top: 10px;
+      }
+    }
+  }
+}
