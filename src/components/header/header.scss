@@ -94,6 +94,10 @@
   &__right {
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(xl) {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
   }
   &__bar {
     display: flex;
@@ -463,4 +467,22 @@
   top: 100%;
   opacity: 1;
   visibility: visible;
+}
+.header-social__list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+
+  @include media-breakpoint-down(xl) {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  a {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
 }
