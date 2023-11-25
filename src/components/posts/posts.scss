@@ -22,9 +22,20 @@
   position: relative;
   background: var(--color-gray);
   z-index: 999999;
- 
+
   @include media-breakpoint-down(xl) {
     border-radius: 0;
     padding-bottom: 40px;
+  }
+}
+
+.posts-light.posts {
+  border: none;
+  border-radius: 0;
+  padding-bottom: 0;
+  background-color: var(--color-gray);
+  .hp-posts__title,
+  .h4 {
+    color: var(--color-blue);
   }
 }

@@ -1,0 +1,96 @@
+{% extends "@components/base/base.twig" %} {% set title = "08.0_player" %} {%
+block main %}
+{% include "@components/player-section/player-section.twig" %}
+<section class="posts posts-light mb-10">
+  <div class="container">
+    <h5 class="h4 mb-3">Články o hráči</h5>
+    <div class="row g-5 mb-10">
+      <div class="col-xl-3 col-lg-6">
+        <a href="#" class="hp-posts__item">
+          <div class="hp-posts__img">
+            <img src="images/content/2.jpeg" alt="" loading="lazy" />
+          </div>
+          <div class="hp-posts__info">
+            <ul class="tags">
+              <li class="tags__date">včera</li>
+            </ul>
+            <div class="hp-posts__title">
+              Udělali jsme velký progres, zhodnotil poslední kola Valenta
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <a href="#" class="hp-posts__item">
+          <div class="hp-posts__img">
+            <img src="images/content/4.jpeg" alt="" loading="lazy" />
+          </div>
+          <div class="hp-posts__info">
+            <ul class="tags">
+              <li class="tags__date">včera</li>
+            </ul>
+            <div class="hp-posts__title">
+              Udělali jsme velký progres, zhodnotil poslední kola Valenta
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <a href="#" class="hp-posts__item">
+          <div class="hp-posts__img">
+            <img src="images/content/3.jpeg" alt="" loading="lazy" />
+          </div>
+          <div class="hp-posts__info">
+            <ul class="tags">
+              <li class="tags__date">včera</li>
+            </ul>
+            <div class="hp-posts__title">
+              Udělali jsme velký progres, zhodnotil poslední kola Valenta
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <a href="#" class="hp-posts__item">
+          <div class="hp-posts__img">
+            <img src="images/content/1.jpeg" alt="" loading="lazy" />
+          </div>
+          <div class="hp-posts__info">
+            <ul class="tags">
+              <li class="tags__date">včera</li>
+            </ul>
+            <div class="hp-posts__title">
+              Udělali jsme velký progres, zhodnotil poslední kola Valenta
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <a href="#" class="link ml-auto">Další články</a>
+  </div>
+</section>
+<div class="pubs">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/632x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/632x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/posts/posts.twig" %} {% endblock %}
