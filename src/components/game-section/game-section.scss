@@ -30,7 +30,9 @@
     }
   }
   &__col + &__col {
-    margin-top: 32px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 32px;
+    }
   }
   &__col {
     max-width: 50%;
