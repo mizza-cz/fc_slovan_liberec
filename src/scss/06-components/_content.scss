@@ -179,3 +179,12 @@ q {
     margin: 32px auto;
   }
 }
+
+.p3 {
+  font-size: 14px;
+  line-height: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
