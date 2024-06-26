@@ -1,13 +1,37 @@
 :root {
   --color-light: #fff;
   --color-dark: #000;
+  --color-gray: #f8f9fa;
 
   --color-blue: #0b2a84;
   --color-blue-2: #01aee2;
-  --color-gray: #f8f9fa;
 }
 
 .dark-theme {
   --color-blue: #000;
   --color-blue-2: #63a1ff;
+
+  .link {
+    color: var(--color-blue-2);
+  }
+  .link::before {
+    background-image: url("../images/ico/link-blue.svg");
+  }
+  .header-social__list svg,
+  .header-social__list svg g,
+  .header-social__list svg path,
+  .header-social__list svg circle {
+    fill: var(--color-blue-2);
+  }
+  .footer-social__list {
+    svg,
+    g,
+    path,
+    circle {
+      fill: var(--color-blue-2);
+    }
+  }
+  .tiktok path {
+    fill: var(--color-blue) !important;
+  }
 }
