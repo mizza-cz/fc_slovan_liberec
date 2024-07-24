@@ -155,4 +155,8 @@
   flex: 0 0 auto;
   position: relative;
   z-index: 9999;
+  padding-left: 5.625rem;
+  @include media-breakpoint-down(xl) {
+    padding-left: 0;
+  }
 }

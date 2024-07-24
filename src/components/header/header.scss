@@ -222,8 +222,8 @@
   }
   &-menu {
     position: absolute;
-    top: 100%;
-    left: -20px;
+    top: 100% !important;
+    left: 0px;
     z-index: 999;
     display: none;
     float: left;
