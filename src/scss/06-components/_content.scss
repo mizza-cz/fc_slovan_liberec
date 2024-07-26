@@ -1,4 +1,7 @@
 .o-content {
+  img {
+    width: -webkit-fill-available;
+  }
   li {
     a {
       font-weight: 700;
