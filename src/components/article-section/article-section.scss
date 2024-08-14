@@ -52,4 +52,9 @@
   @include media-breakpoint-down(lg) {
     margin-bottom: 24px;
   }
+
+  p {
+    font-family: "KometPro" !important ;
+    font-weight: 300;
+  }
 }
