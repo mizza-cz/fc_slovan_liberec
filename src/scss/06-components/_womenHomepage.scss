@@ -1,0 +1,43 @@
+.base-women {
+  .header-top {
+    background-color: #eb005d;
+  }
+  .footer {
+    background-color: #eb005d;
+  }
+  .dropdown-menu {
+    background-color: #020a0a;
+  }
+  .footer .copyright {
+    color: #020a0a;
+  }
+  .nav-item + .nav-item::before {
+    background-color: #020a0a;
+  }
+  .footer-social a svg circle,
+  .footer-social a svg path,
+  .footer-social a svg g,
+  .header-social__list a svg circle,
+  .header-social__list a svg path,
+  .header-social__list a svg g {
+    fill: #020a0a;
+  }
+  .footer-social__list a svg > svg path,
+  .header-social__list a svg > svg path {
+    fill: #eb005d;
+  }
+  .dropdown-item {
+    color: var(--color-light);
+    &:hover {
+      color: #eb005d;
+    }
+  }
+  .header-top__bar {
+    @include media-breakpoint-down(xl) {
+      background-color: #eb005d;
+    }
+  }
+  .scoreboard-games {
+    border-bottom: 0.0625rem solid var(--color-blue);
+  }
+}

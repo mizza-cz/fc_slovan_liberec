@@ -1,0 +1,44 @@
+.base-juniors {
+  .header-top {
+    background-color: #63a1ff;
+  }
+  .nav-item + .nav-item::before {
+    background-color: #020a0a;
+  }
+  .footer {
+    background-color: #63a1ff;
+  }
+  .dropdown-menu {
+    background-color: #020a0a;
+  }
+  .footer .copyright {
+    color: #020a0a;
+  }
+
+  .footer-social a svg circle,
+  .footer-social a svg path,
+  .footer-social a svg g,
+  .header-social__list a svg circle,
+  .header-social__list a svg path,
+  .header-social__list a svg g {
+    fill: #020a0a;
+  }
+  .footer-social__list a svg > svg path,
+  .header-social__list a svg > svg path {
+    fill: #63a1ff;
+  }
+  .dropdown-item {
+    color: var(--color-light);
+    &:hover {
+      color: #63a1ff;
+    }
+  }
+  .header-top__bar {
+    @include media-breakpoint-down(xl) {
+      background-color: #63a1ff;
+    }
+  }
+  .scoreboard-games {
+    border-bottom: 0.0625rem solid var(--color-blue);
+  }
+}

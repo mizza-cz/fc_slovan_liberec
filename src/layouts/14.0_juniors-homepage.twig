@@ -1,0 +1,172 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"14.0_juniors-homepage" %} {% block main %} {% include
+"@components/topstory/topstory.twig" %}
+
+<section class="scoreboard">
+  <div class="scoreboard-games">
+    <div class="scoreboard__name">
+      <h4 class="h4">Zápasy U19</h4>
+      <a href="#"> Všechny zápasy</a>
+    </div>
+    <div class="scoreboard__list">
+      <div class="scoreboard__item">
+        <a href="#" class="scoreboard__game">
+          <div class="scoreboard__info">
+            <div class="scoreboard__team">
+              <span>LIB</span>
+              <img src="images/ico/logo.svg" loading="lazy" alt="" />
+            </div>
+            <div class="scoreboard__result">1:2</div>
+            <div class="scoreboard__team">
+              <img src="images/ico/sparta.svg" loading="lazy" alt="" />
+              <span>SPA</span>
+            </div>
+          </div>
+          <div class="scoreboard__date">ne 30. 4. 2023, 15:00</div>
+        </a>
+      </div>
+      <div class="scoreboard__item">
+        <a href="#" class="scoreboard__game">
+          <div class="scoreboard__info">
+            <div class="scoreboard__team">
+              <span>LIB</span>
+              <img src="images/ico/logo.svg" loading="lazy" alt="" />
+            </div>
+            <div class="scoreboard__result">1:2</div>
+            <div class="scoreboard__team">
+              <img src="images/ico/sparta.svg" loading="lazy" alt="" />
+              <span>SPA</span>
+            </div>
+          </div>
+          <div class="scoreboard__date">ne 30. 4. 2023, 15:00</div>
+        </a>
+      </div>
+      <div class="scoreboard__item">
+        <a href="#" class="scoreboard__game">
+          <div class="scoreboard__info">
+            <div class="scoreboard__team">
+              <span>LIB</span>
+              <img src="images/ico/logo.svg" loading="lazy" alt="" />
+            </div>
+            <div class="scoreboard__result">x</div>
+            <div class="scoreboard__team">
+              <img src="images/ico/sparta.svg" loading="lazy" alt="" />
+              <span>SPA</span>
+            </div>
+          </div>
+          <div class="scoreboard__date">ne 30. 4. 2023, 15:00</div>
+        </a>
+      </div>
+      <div class="scoreboard__item">
+        <a href="#" class="scoreboard__game">
+          <div class="scoreboard__info">
+            <div class="scoreboard__team">
+              <span>LIB</span>
+              <img src="images/ico/logo.svg" loading="lazy" alt="" />
+            </div>
+            <div class="scoreboard__result">x</div>
+            <div class="scoreboard__team">
+              <img src="images/ico/sparta.svg" loading="lazy" alt="" />
+              <span>SPA</span>
+            </div>
+          </div>
+          <div class="scoreboard__date">ne 30. 4. 2023, 15:00</div>
+        </a>
+      </div>
+      <div class="scoreboard__item">
+        <a href="#" class="scoreboard__game">
+          <div class="scoreboard__info">
+            <div class="scoreboard__team">
+              <span>LIB</span>
+              <img src="images/ico/logo.svg" loading="lazy" alt="" />
+            </div>
+            <div class="scoreboard__result">x</div>
+            <div class="scoreboard__team">
+              <img src="images/ico/sparta.svg" loading="lazy" alt="" />
+              <span>SPA</span>
+            </div>
+          </div>
+          <div class="scoreboard__date">ne 30. 4. 2023, 15:00</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="pubs">
+  <div class="container-fluid">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="#" target="_blank">
+          <img
+            src="https://via.placeholder.com/550x150"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/hp-posts/hp-posts.twig" %} {% include
+"@components/fanshop/fanshop.twig" %}
+
+<div class="hp-border-section">
+  <section class="hp-social">
+    <div class="container">
+      <div class="row g-10 mb-3">
+        <div class="col-lg-8">
+          {% include "@components/socialStream/socialStream.twig" %}
+        </div>
+        <div class="col-lg-4">
+          {% include "@components/socialNews/socialNews.twig" %}
+        </div>
+      </div>
+      <a href="#" class="link ml-auto">Další zprávy</a>
+    </div>
+  </section>
+
+  <div class="pubs">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <a href="#" target="_blank">
+            <img
+              src="https://via.placeholder.com/632x150"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#" target="_blank">
+            <img
+              src="https://via.placeholder.com/632x150"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

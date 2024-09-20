@@ -68,15 +68,21 @@
     <!-- ****** scripts ****** -->
   </head>
   <body>
-    <div class="base">
-      <div class="base-wrapper">
+    <div class="base
+    {% if title == "14.0_juniors-homepage" %}
+        base-juniors
+    {% elseif title == "15.0_women-homepage" %}
+        base-women
+    {% endif %}
+">
+    <div class="base-wrapper">
         {% include "@components/header/header.twig" %}
         <main class="main" aria-label="Hlavní obsah">
           {% block main %}{% endblock %}
         </main>
-      </div>
-      {% include "@components/footer/footer.twig" %}
     </div>
+    {% include "@components/footer/footer.twig" %}
+</div>
     <script
       defer
       src="https://code.jquery.com/jquery-3.6.0.min.js"
