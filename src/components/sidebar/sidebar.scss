@@ -1,5 +1,5 @@
 .sidebar {
-  width: 90px;
+  width: 7rem;
   position: fixed;
   z-index: 10;
   top: 64px;
@@ -33,6 +33,9 @@
     flex-direction: row;
     margin-top: 0;
   }
+  @include media-breakpoint-down(md) {
+    margin-right: -16px;
+  }
   li {
     width: 100%;
     @include media-breakpoint-down(xl) {
@@ -48,14 +51,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include media-breakpoint-down(xl) {
-      padding: 0;
-      padding-left: 24px;
-      padding-right: 24px;
+    @include media-breakpoint-only(lg) {
+      padding: 0 24px;
     }
-    @include media-breakpoint-down(lg) {
-      padding-left: 12px;
-      padding-right: 12px;
+    @include media-breakpoint-only(md) {
+      padding: 0 24px;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 0 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 12px;
     }
     @include media-breakpoint-down(lg) {
       height: 24px;
@@ -64,6 +70,11 @@
       span {
         visibility: visible;
         opacity: 1;
+      }
+      @include media-breakpoint-down(md) {
+        span {
+          display: none;
+        }
       }
     }
   }
@@ -93,6 +104,7 @@
     text-align: center;
     line-height: 15px;
     text-transform: uppercase;
+
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;

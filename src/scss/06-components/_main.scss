@@ -1,7 +1,7 @@
 .main {
   background-color: var(--color-gray);
 
-  padding-left: 90px;
+  padding-left: 7rem;
   padding-top: 112px;
   // padding-bottom: 100px;
   @include media-breakpoint-down(xl) {
@@ -9,6 +9,3 @@
     padding-top: 80px;
   }
 }
-
-
-

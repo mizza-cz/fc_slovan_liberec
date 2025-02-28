@@ -2,7 +2,6 @@
   position: fixed;
   width: 100%;
   z-index: 99999999;
-
   .logo {
     width: 86px;
     height: 86px;
@@ -43,11 +42,13 @@
   background-color: var(--color-blue);
   width: 100%;
   .container-fluid {
-    @include media-breakpoint-down(xl) {
+    // padding: 0 8px;
+    padding-left: 0;
+    @include media-breakpoint-down(xxl) {
       position: absolute;
     }
   }
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     height: 60px;
     padding-left: 0;
     display: flex;
@@ -94,7 +95,7 @@
   &__right {
     display: flex;
     align-items: center;
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       flex-wrap: wrap-reverse;
       justify-content: center;
     }
@@ -105,7 +106,7 @@
     align-items: center;
     justify-content: space-between;
     height: 68px;
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       background-color: var(--color-blue);
       position: absolute;
       top: 0;
@@ -131,7 +132,7 @@
 }
 .header-nav {
   height: 100%;
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     margin-bottom: 16px;
   }
 }
@@ -146,7 +147,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     flex-direction: column !important;
     text-align: center;
   }
@@ -157,7 +158,7 @@
   display: block;
   padding: 0 18px;
   height: 100%;
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     padding: 16px 0;
   }
 }
@@ -171,11 +172,11 @@
     width: 3px;
     height: 7px;
     background-color: var(--color-blue-2);
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       display: none;
     }
   }
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     &::after {
       content: "";
       position: absolute;
@@ -199,7 +200,7 @@
   align-items: center;
   letter-spacing: 0.5px;
   height: 100%;
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     text-align: center;
     justify-content: center;
   }
@@ -236,7 +237,7 @@
     background-color: var(--color-light);
     overflow: hidden;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.046793);
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       background-color: var(--color-blue);
       padding-top: 12px;
     }
@@ -250,7 +251,7 @@
         }
       }
     }
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       text-align: center;
       position: static;
       box-shadow: none;
@@ -287,7 +288,7 @@
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 999;
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       color: var(--color-blue-2);
       left: 0;
       right: 0;
@@ -302,7 +303,7 @@
         background: var(--color-blue);
       }
     }
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       transform: none;
       width: 100%;
       left: 0;
@@ -336,13 +337,13 @@
   }
 }
 .navbar .nav-item .dropdown-menu.show {
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     display: block;
   }
 }
 // mobile btn
 .is-nav-open .header .header-top__bar {
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
@@ -365,6 +366,9 @@
   margin-left: auto;
   margin-right: 8px;
   z-index: 99999;
+  @include media-breakpoint-down(md) {
+    margin-right: 0;
+  }
   @include media-breakpoint-down(sm) {
     padding: 0.25rem 12px;
   }
@@ -400,9 +404,9 @@
     box-shadow: none;
   }
 
-  @include media-breakpoint-only(xl) {
-    display: none;
-  }
+  // @include media-breakpoint-only(xl) {
+  //   display: none;
+  // }
   @include media-breakpoint-only(xxl) {
     display: none;
   }
@@ -475,7 +479,7 @@
   gap: 8px;
   margin-right: 24px;
 
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     margin-right: 0;
     width: 100%;
     justify-content: center;
