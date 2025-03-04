@@ -2,10 +2,11 @@
   background-color: var(--color-blue);
   padding: 40px 0;
   padding-bottom: 80px;
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+  border-bottom-left-radius: 50% 12%;
+  border-bottom-right-radius: 50% 12%;
   position: relative;
   z-index: 999999;
+
   @include media-breakpoint-down(xl) {
     border-radius: 0;
     padding-bottom: 40px;
@@ -38,4 +39,8 @@
   .h4 {
     color: var(--color-blue);
   }
+}
+
+.bg-white {
+  background-color: #fff !important;
 }
