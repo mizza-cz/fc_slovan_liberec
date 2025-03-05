@@ -22,8 +22,7 @@
   border-bottom-right-radius: 50% 4%;
   position: relative;
   background: var(--color-gray);
-  z-index: 999999;
-
+  z-index: 999;
   @include media-breakpoint-down(xl) {
     border-radius: 0;
     padding-bottom: 40px;
