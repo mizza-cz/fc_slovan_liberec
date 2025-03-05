@@ -188,12 +188,13 @@
   }
 }
 
-.team-section__item:hover {
+a.team-section__item:hover {
   .team-section__hover {
     transform: translateY(0);
     opacity: 1;
   }
   .team-section__info {
     transform: translateY(-2rem);
+ 
   }
 }
