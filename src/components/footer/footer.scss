@@ -3,7 +3,7 @@
   position: relative;
   border-bottom-left-radius: 50% 9%;
   border-bottom-right-radius: 50% 9%;
-  z-index: 9999;
+  z-index: 99;
   padding-top: 80px;
   padding-bottom: 40px;
   margin-bottom: -12rem;
@@ -170,7 +170,7 @@
 .footer-wrapper {
   flex: 0 0 auto;
   position: relative;
-  z-index: 99999999;
+  z-index: 101;
 
   @include media-breakpoint-down(xl) {
     padding-left: 0;

@@ -1,9 +1,8 @@
 .header {
   position: fixed;
   width: 100%;
-  z-index: 99999999;
- 
-  
+  z-index: 100;
+
   .logo {
     width: 86px;
     height: 86px;
@@ -12,7 +11,7 @@
     position: absolute;
     left: 16px;
     top: 16px;
-    z-index: 999;
+    z-index: 101;
     transition: all 0.3s;
     order: 1;
     @include media-breakpoint-down(xl) {
@@ -227,7 +226,7 @@
     position: absolute;
     top: 100% !important;
     left: 0px;
-    z-index: 999;
+    z-index: 101;
     display: none;
     float: left;
     min-width: 10rem;
@@ -289,7 +288,7 @@
     border: 0;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    z-index: 999;
+    z-index: 101;
     @include media-breakpoint-down(xxl) {
       color: var(--color-blue-2);
       left: 0;
@@ -367,7 +366,7 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: 8px;
-  z-index: 99999;
+  z-index: 101;
   @include media-breakpoint-down(md) {
     margin-right: 0;
   }
