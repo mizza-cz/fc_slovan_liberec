@@ -61,15 +61,5 @@
       color: var(--color-blue);
     }
   }
-  .section-header__links {
-    @include media-breakpoint-down(lg) {
-      overflow-x: auto;
-      flex-wrap: nowrap;
-    }
-    li {
-      @include media-breakpoint-down(lg) {
-        white-space: nowrap;
-      }
-    }
-  }
+  
 }

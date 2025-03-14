@@ -29,9 +29,6 @@
     display: block;
     text-decoration: none;
     transition: all 0.3s;
-    &:hover {
-      background: rgba(#01aee2, 0.2);
-    }
   }
   &__item {
     max-width: 20%;
@@ -133,4 +130,7 @@
   @include media-breakpoint-down(xxl) {
     overflow-x: auto;
   }
+}
+a.scoreboard__game:hover {
+  background: rgba(#01aee2, 0.2);
 }

@@ -20,9 +20,9 @@
   }
   @include media-breakpoint-down(lg) {
     float: none;
-    margin: 40px auto;
+    margin: 40px auto !important;
     max-width: 100%;
-    
+    order: 3;
   }
   .tags {
     margin: 0;
