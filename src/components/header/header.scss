@@ -1,5 +1,4 @@
 .header {
-  position: fixed;
   width: 100%;
   z-index: 100;
 
@@ -37,9 +36,9 @@
 
 .header-top {
   padding-left: 112px;
-  position: relative;
-  z-index: 22;
-  height: 100%;
+  position: fixed;
+  z-index: 110;
+
   background-color: var(--color-blue);
   width: 100%;
   .container-fluid {
