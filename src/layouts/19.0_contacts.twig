@@ -1,0 +1,118 @@
+{% extends "@components/base/base.twig" %} {% set title = "19.0_contacts" %} {%
+block main %}
+
+<section class="static-section mt-16">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <div class="o-content">
+          <h1>Kontakt</h1>
+
+          <table>
+            <tbody>
+              <tr>
+                <th colspan="2">FC SLOVAN LIBEREC a.s.</th>
+              </tr>
+              <tr>
+                <td>Číslo oddílu:</td>
+                <td>5130201 (405020)</td>
+              </tr>
+              <tr>
+                <td>Název oddílu:</td>
+                <td>FC SLOVAN LIBEREC a.s.</td>
+              </tr>
+              <tr>
+                <td>Zápis do OR:</td>
+                <td>
+                  Zapsáno v obchodním rejstříku u Krajského soudu v Ústí nad
+                  Labem v oddílu B, vložka 593
+                </td>
+              </tr>
+              <tr>
+                <td>IČO:</td>
+                <td>61326461</td>
+              </tr>
+              <tr>
+                <td>DIČ:</td>
+                <td>CZ61326461</td>
+              </tr>
+              <tr>
+                <td>Adresa:</td>
+                <td>Na Hradbách 1300<br />460 01 Liberec 1</td>
+              </tr>
+              <tr>
+                <td>Telefon:</td>
+                <td>+420 485 103 714</td>
+              </tr>
+              <tr>
+                <td>Fax:</td>
+                <td>+420 485 103 715</td>
+              </tr>
+              <tr>
+                <td>E-mail:</td>
+                <td>
+                  <a href="mailto:info@fcslovanliberec.cz"
+                    >info@fcslovanliberec.cz</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>WWW:</td>
+                <td>
+                  <a href="http://www.fcslovanliberec.cz/"
+                    >www.fcslovanliberec.cz</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Bankovní spojení:</td>
+                <td>KB Liberec, č.ú. 950920257/0100</td>
+              </tr>
+              <tr>
+                <td>Aktuální logo klubu:</td>
+                <td>
+                  <a
+                    href="https://fcslovanliberec.esports.cz/foto/logo_2024.png"
+                    rel="out"
+                    title="Aktuální logo"
+                    >Oficiální verze</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Žádosti o akreditace:</td>
+                <td>
+                  posílejte na tento
+                  <a href="mailto:fanousci@fcslovanliberec.cz">mail</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <aside class="aside">
+          <div class="aside-box">
+            <h2 class="h4 mb-1">Klub</h2>
+            <ul class="aside__menu">
+              <li>
+                <a href="/vedeni-klubu">Vedení</a>
+              </li>
+              <li>
+                <a href="/historie">Historie</a>
+              </li>
+              <li>
+                <a href="/kontakt" class="active">Kontakt</a>
+              </li>
+              <li>
+                <a href="/dvorana-slavy">Dvorana slávy</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/posts/posts.twig" %} {% endblock %}

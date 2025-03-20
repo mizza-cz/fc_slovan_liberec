@@ -51,4 +51,10 @@
 .text-light {
   color: var(--color-light) !important;
 }
+.static-section {
+  margin-bottom: 4rem;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0;
+  }
+}
 /*! purgecss end ignore */
