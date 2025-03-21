@@ -1,26 +1,14 @@
 .postsSide {
   position: relative;
   float: right;
-  max-width: 380px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 68px;
   top: 0;
-  margin-right: -25%;
   padding-top: 32px;
   padding-bottom: 32px;
   border-top: 1px solid var(--color-blue-2);
   border-bottom: 1px solid var(--color-blue-2);
 
-  @include media-breakpoint-only(xl) {
-    margin-right: -17%;
-  }
-  @include media-breakpoint-only(lg) {
-    margin-right: -10%;
-  }
   @include media-breakpoint-down(lg) {
     float: none;
-    margin: 40px auto !important;
     max-width: 100%;
     order: 3;
   }
