@@ -1,0 +1,11 @@
+.accordion-header {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+}
+.accordion-button::after {
+  background-image: url("../images/ico/chevron-w.svg") !important;
+}
+.accordion-button {
+  font-size: 20px;
+  cursor: pointer;
+}

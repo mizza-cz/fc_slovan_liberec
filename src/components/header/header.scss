@@ -32,6 +32,9 @@
       display: block;
     }
   }
+  .collapse:not(.show) {
+    display: flex;
+  }
 }
 
 .header-top {
@@ -209,9 +212,7 @@
     color: var(--color-light);
   }
 }
-.collapse:not(.show) {
-  display: flex;
-}
+
 .dropdown-menu[data-bs-popper] {
   top: 98%;
 }
@@ -316,8 +317,8 @@
       margin: 0;
       &:hover,
       &:focus {
-        background-color: var(--color-light);
         color: var(--color-light);
+        background: var(--color-blue);
       }
     }
   }
