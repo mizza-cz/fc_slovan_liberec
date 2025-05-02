@@ -5,6 +5,8 @@
 
   --color-blue: #0b2a84;
   --color-blue-2: #01aee2;
+  --color-pink: #eb005d;
+  --color-light-blue: #63a1ff;
 }
 
 .dark-theme {
@@ -17,7 +19,7 @@
   .link::before {
     background-image: url("../images/ico/link-blue.svg");
   }
-  
+
   .header-social__list svg,
   .header-social__list svg g,
   .header-social__list svg path,
@@ -34,5 +36,9 @@
   }
   .tiktok path {
     fill: var(--color-blue) !important;
+  }
+  .sidebar__list svg,
+  .sidebar__list path {
+    fill: var(--color-dark);
   }
 }

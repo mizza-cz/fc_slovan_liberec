@@ -46,4 +46,14 @@
   .scoreboard-games {
     border-bottom: 0.0625rem solid var(--color-blue);
   }
+  .hp-posts__title {
+    color: var(--color-dark);
+  }
+  .tags__date {
+    color: var(--color-pink);
+  }
+  .sidebar__list svg,
+  .sidebar__list path {
+    fill: var(--color-pink);
+  }
 }
