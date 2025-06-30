@@ -103,6 +103,11 @@
       justify-content: center;
     }
   }
+  &__right-link {
+    width: 60px;
+    height: 58px;
+    margin-right: 4px;
+  }
   &__bar {
     display: flex;
     position: relative;

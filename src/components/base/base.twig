@@ -68,26 +68,20 @@
     <!-- ****** scripts ****** -->
   </head>
   <body>
-    <div class="base
-    {% if title == "14.0_juniors-homepage" %}
-        base-juniors
-    {% elseif title == "15.0_women-homepage" %}
-        base-women
-    {% endif %}
-">
-    <div class="base-wrapper">
-        {% if title == "14.0_juniors-homepage" or title == "15.0_women-homepage" %}
-            {% include "@components/header/headerNew.twig" %}
-        {% else %}
-            {% include "@components/header/header.twig" %}
-        {% endif %}
-        
+    <div
+      class="base {% if title == '14.0_juniors-homepage' %} base-juniors {% elseif title == '15.0_women-homepage' %} base-women {% endif %}"
+    >
+      <div class="base-wrapper">
+        {% if title == '14.0_juniors-homepage' or title == '15.0_women-homepage'
+        %} {% include "@components/header/headerNew.twig" %} {% else %} {%
+        include "@components/header/header.twig" %} {% endif %}
+
         <main class="main" aria-label="Hlavní obsah">
           {% block main %}{% endblock %}
         </main>
+      </div>
+      {% include "@components/footer/footer.twig" %}
     </div>
-    {% include "@components/footer/footer.twig" %}
-</div>
 
     <script
       defer
