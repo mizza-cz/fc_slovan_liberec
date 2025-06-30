@@ -1,5 +1,4 @@
 .hp-posts {
-  overflow-x: auto;
   white-space: nowrap;
   margin-bottom: 40px;
   overflow-y: hidden;
@@ -11,7 +10,7 @@
 }
 .hp-posts__inner {
   position: relative;
-
+  overflow-x: auto;
   // &::before {
   //   content: "";
   //   position: absolute;
