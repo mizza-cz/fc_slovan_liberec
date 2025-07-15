@@ -1,5 +1,9 @@
 .topstory {
   margin-bottom: 48px;
+  padding-top: 2rem;
+  @include media-breakpoint-down(xl) {
+    padding-top: 1rem;
+  }
   @include media-breakpoint-down(lg) {
     margin-bottom: 8px;
   }

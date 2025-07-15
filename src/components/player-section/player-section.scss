@@ -1,7 +1,7 @@
 .player-section {
   margin-top: 40px;
   @include media-breakpoint-down(xl) {
-    margin-top: 0;
+    margin-top: 16px;
   }
   &__wrapper {
     background: rgba(#0b2a84, 0.97);
