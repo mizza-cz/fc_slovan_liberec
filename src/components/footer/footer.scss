@@ -105,7 +105,7 @@
     }
   }
   .copyright {
-    color: rgba(1, 174, 226, 1);
+    color: #63a1ff;
     font-size: 18px;
     font-weight: 700;
     @include media-breakpoint-down(lg) {
@@ -117,7 +117,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    color: rgba(1, 174, 226, 1);
+    color: #63a1ff;
     @include media-breakpoint-down(lg) {
       text-align: center;
       margin-bottom: 24px;
@@ -133,7 +133,7 @@
     flex-direction: column-reverse;
   }
   .cookies {
-    color: #01aee2;
+    color: #63a1ff;
     font-size: 16px;
     font-weight: 400;
     text-align: right;

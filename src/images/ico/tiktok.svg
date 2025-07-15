@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg class="tiktok" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <!-- Circle background -->
-    <circle cx="12" cy="12" r="12" fill="#01AEE2"/>
+    <circle cx="12" cy="12" r="12" fill="#63a1ff"/>
     
     <!-- TikTok icon -->
     <svg x="4" y="4" width="16px" height="16px" viewBox="0 0 448 512">
