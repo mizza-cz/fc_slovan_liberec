@@ -137,3 +137,17 @@
     }
   }
 }
+
+.section-header__links--navigation {
+  background-color: var(--color-light);
+  justify-content: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  @include media-breakpoint-down(md) {
+    justify-content: flex-start;
+    margin-bottom: 16px !important;
+  }
+  li {
+    margin-bottom: 0;
+  }
+}
