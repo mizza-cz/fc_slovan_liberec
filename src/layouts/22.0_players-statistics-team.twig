@@ -1,0 +1,54 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"22.0_players-statistics-team" %} {% block main %}
+
+<section class="stats-players mt-16">
+  <div class="container">
+    <h1 class="mb-4 h1">Top statistiky</h1>
+    <ul class="section-header__links">
+      <li>
+        <a href="#" class=" ">Hráčské </a>
+      </li>
+      <li>
+        <a href="#" class="active">Týmové</a>
+      </li>
+    </ul>
+    <div class="stats">
+      <div class="stat-box">
+        <div class="stat-title">Vstřelené góly</div>
+        <div class="box-1">0<span>16. v lize</span></div>
+        <div class="box-2">Doma <span>0</span></div>
+        <div class="box-3">Venku <span>0</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Střely</div>
+        <div class="box-1">0<span>16. v lize</span></div>
+        <div class="box-2">Na branku <span>0</span></div>
+        <div class="box-3">Úspěšnost <span>0%</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Přihrávky</div>
+        <div class="box-1">0<span>16. v lize</span></div>
+        <div class="box-2">Úspěšnost <span>0%</span></div>
+        <div class="box-3">Chance index <span>0</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Držení míče</div>
+        <div class="box-1">0%<span>3. v lize</span></div>
+        <div class="box-2">Driblinky <span>0</span></div>
+        <div class="box-3">Útoky <span>0</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Obranné souboje</div>
+        <div class="box-1">0%<span>3. v lize</span></div>
+        <div class="box-2">Celkem <span>0</span></div>
+        <div class="box-3">Odebrané míče <span>0</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Fauly inkasované</div>
+        <div class="box-1">0<span>16. v lize</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/posts/posts.twig" %} {% endblock %}
