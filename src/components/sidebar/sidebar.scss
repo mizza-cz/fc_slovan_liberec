@@ -10,7 +10,7 @@
   padding-top: 120px;
   @include media-breakpoint-down(xl) {
     height: 60px;
-    top: 0;
+    top: 40px;
     right: 0;
     margin: 0 auto;
     width: fit-content;
@@ -118,6 +118,15 @@
     @include media-breakpoint-down(lg) {
       object-fit: contain;
       display: block;
+    }
+  }
+}
+
+.header.scrolled {
+  .sidebar {
+    @include media-breakpoint-down(xl) {
+      transition: all 0.3s;
+      top: 0;
     }
   }
 }
