@@ -45,6 +45,11 @@
       width: 240px;
       max-width: 240px;
     }
+    &:nth-child(3) {
+      @include media-breakpoint-down(lg) {
+        order: -1;
+      }
+    }
     &:nth-child(odd) {
       background-color: #fff;
     }
