@@ -20,3 +20,24 @@ function headerNavOpenerClick() {
     $("#mobile-search, .header-top__search").toggleClass("active");
   });
 })();
+
+(function initHeaderScroll() {
+  const header = document.querySelector(".header");
+  const scrolledClass = "scrolled";
+
+  if (!header) {
+    return;
+  }
+
+  function onScroll() {
+    if (window.pageYOffset > 0) {
+      header.classList.add(scrolledClass);
+    } else {
+      header.classList.remove(scrolledClass);
+    }
+  }
+
+  onScroll();
+
+  window.addEventListener("scroll", onScroll);
+})();

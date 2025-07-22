@@ -1,7 +1,8 @@
 .header {
   width: 100%;
   z-index: 100;
-
+  padding-top: 2.7rem;
+  transition: padding-top 0.3s ease;
   .logo {
     width: 86px;
     height: 86px;
@@ -501,4 +502,8 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.header.scrolled {
+  padding-top: 0;
 }
