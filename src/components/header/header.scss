@@ -221,7 +221,16 @@
     color: var(--color-light);
   }
 }
-
+.dropdown-item[target="_blank"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown-item[target="_blank"]::after {
+  content: "↗";
+  font-size: 0.9em; /* zmenšit o něco velikost symbolu */
+  vertical-align: middle;
+}
 .dropdown-menu[data-bs-popper] {
   top: 98%;
 }
