@@ -193,3 +193,16 @@ q {
     line-height: 16px;
   }
 }
+
+.o-content .Opta {
+  ul > li {
+    padding-left: 0 !important;
+  }
+  ul > li::before {
+    display: none !important;
+  }
+  .Opta_F_MP .Opta-Events span {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
