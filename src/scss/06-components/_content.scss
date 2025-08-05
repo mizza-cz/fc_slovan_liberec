@@ -206,3 +206,12 @@ q {
     margin-bottom: 0 !important;
   }
 }
+
+.o-content .fameImg {
+  padding: 24px;
+  box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.046793);
+  background-color: var(--color-light);
+  margin-bottom: 2.5rem;
+  padding: 2rem 2.5rem 2rem 2.5rem;
+  height: 100%;
+}
