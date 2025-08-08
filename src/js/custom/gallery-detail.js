@@ -25,23 +25,15 @@ if ($(".js-gallery").length) {
       };
 
     var items = getItems();
-    $pic.on("click", "figure", function (event) {
-      event.preventDefault();
+    $pic.on("click", "a", function (e) {
+      e.preventDefault();
 
-      var $index = $(this).parent().index();
-      var options = {
-        index: $index,
+      var index = $pic.find("a").index(this);
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+        index: index,
         bgOpacity: 0.7,
         showHideOpacity: true,
-      };
-
-      // Initialize PhotoSwipe
-      var gallery = new PhotoSwipe(
-        pswpElement,
-        PhotoSwipeUI_Default,
-        items,
-        options
-      );
+      });
       gallery.init();
     });
   });
