@@ -22,21 +22,45 @@ function tablesWrap() {
   }
 }
 
-// IFRAME youtube/google (wysiwyg editor) responsive
+// // IFRAME youtube/google (wysiwyg editor) responsive
+// function iframesWrap() {
+//   var contentIframes = document.querySelectorAll(".o-content iframe"),
+//     i;
+
+//   for (i = 0; i < contentIframes.length; ++i) {
+//     contentIframes[i].removeAttribute("height");
+//     contentIframes[i].removeAttribute("width");
+
+//     var iframeWrap = document.createElement("div");
+//     iframeWrap.classList.add("ratio");
+//     iframeWrap.classList.add("ratio-16x9");
+
+//     contentIframes[i].parentNode.insertBefore(iframeWrap, contentIframes[i]);
+
+//     iframeWrap.appendChild(contentIframes[i]);
+//   }
+// }
 function iframesWrap() {
-  var contentIframes = document.querySelectorAll(".o-content iframe"),
-    i;
+  const iframes = document.querySelectorAll(".o-content iframe");
 
-  for (i = 0; i < contentIframes.length; ++i) {
-    contentIframes[i].removeAttribute("height");
-    contentIframes[i].removeAttribute("width");
+  iframes.forEach((ifr) => {
+    const src = (ifr.getAttribute("src") || "").toLowerCase();
 
-    var iframeWrap = document.createElement("div");
-    iframeWrap.classList.add("ratio");
-    iframeWrap.classList.add("ratio-16x9");
+    // Только YouTube и slovan.plus
+    if (
+      src.includes("youtube.com") ||
+      src.includes("youtu.be") ||
+      src.includes("slovan.plus/embed/videos")
+    ) {
+      ifr.removeAttribute("height");
+      ifr.removeAttribute("width");
+      ifr.style.position = ""; // уберём абсолют, чтобы не мешал
 
-    contentIframes[i].parentNode.insertBefore(iframeWrap, contentIframes[i]);
+      const wrap = document.createElement("div");
+      wrap.classList.add("ratio", "ratio-16x9");
 
-    iframeWrap.appendChild(contentIframes[i]);
-  }
+      ifr.parentNode.insertBefore(wrap, ifr);
+      wrap.appendChild(ifr);
+    }
+  });
 }
