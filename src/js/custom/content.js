@@ -45,8 +45,6 @@ function iframesWrap() {
 
   iframes.forEach((ifr) => {
     const src = (ifr.getAttribute("src") || "").toLowerCase();
-
-    // Только YouTube и slovan.plus
     if (
       src.includes("youtube.com") ||
       src.includes("youtu.be") ||
@@ -54,7 +52,7 @@ function iframesWrap() {
     ) {
       ifr.removeAttribute("height");
       ifr.removeAttribute("width");
-      ifr.style.position = ""; // уберём абсолют, чтобы не мешал
+      ifr.style.position = "";
 
       const wrap = document.createElement("div");
       wrap.classList.add("ratio", "ratio-16x9");

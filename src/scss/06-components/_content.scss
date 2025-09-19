@@ -215,3 +215,8 @@ q {
   padding: 2rem 2.5rem 2rem 2.5rem;
   height: 100%;
 }
+.o-content iframe {
+  @include media-breakpoint-down(md) {
+    width: 100% !important;
+  }
+}
