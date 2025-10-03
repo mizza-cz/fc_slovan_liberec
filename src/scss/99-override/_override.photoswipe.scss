@@ -30,4 +30,7 @@
   /* We use .gif in browsers that don't support CSS animation */
   background: url("#{$s-root-img}preloader.gif") 0 0 no-repeat;
 }
+.pswp__img {
+  margin: 0 !important;
+}
 /*! purgecss end ignore */

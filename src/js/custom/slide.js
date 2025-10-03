@@ -40,7 +40,7 @@ var slideDown = function slideDown(target) {
 	target.offsetHeight;
 	target.style.boxSizing = 'border-box';
 	target.style.transitionProperty = "height, margin, padding";
-	target.style.transitionDuration = duration + 'ms';
+	target.style.transitionDuration = duration + 'ms' ;
 	target.style.height = height + 'px';
 	target.style.removeProperty('padding-top');
 	target.style.removeProperty('padding-bottom');
