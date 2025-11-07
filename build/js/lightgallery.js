@@ -37,6 +37,11 @@ $(document).ready(function () {
       );
     }
   });
-  
+  $(".js-gallery").lightGallery({
+    selector: "a",
+    download: false,
+    share: false,
+    hash: false,
+    backdropDuration: 500,
+  });
 });
- 
