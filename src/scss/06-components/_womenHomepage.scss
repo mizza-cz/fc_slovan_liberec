@@ -63,5 +63,12 @@
   }
   .posts {
     background: var(--color-pink);
+    .tags__date {
+      color: var(--color-dark);
+    }
+  }
+  .topstory__title {
+    color: var(--color-dark);
   }
 }
+ 
